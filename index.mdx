@@ -1,0 +1,45 @@
+---
+title: Вики WestShield
+description: Инструкции, правила и справка по возможностям сервера WestShield.
+icon: BookOpen
+---
+
+import { Gamepad2, ShieldCheck, Store, Wine, Package, Heart, Users, MessageCircle, Hammer, EyeOff, Blocks, PersonStanding } from "lucide-react";
+
+Добро пожаловать в вики WestShield. Выберите раздел — здесь собрали всё для комфортной игры.
+
+<div className="wiki-home-category">
+  <p className="wiki-home-category__title">Введение</p>
+  <Cards>
+    <Card title="Начало игры" description="Подключение, регистрация и привязка аккаунта." href="/wiki/intro/start" icon={<Gamepad2 />} />
+    <Card title="О проекте" description="Идея и принципы WestShield." href="/wiki/intro/about" icon={<Users />} />
+  </Cards>
+</div>
+
+<div className="wiki-home-category">
+  <p className="wiki-home-category__title">Плагины</p>
+  <Cards>
+    <Card title="Пивоварение" description="Инструкция и рецепты напитков BreweryX." href="/wiki/plugins/brewery/how-to" icon={<Wine />} />
+    <Card title="Позы" description="Как сесть, лечь или начать ползти с помощью GSit." href="/wiki/plugins/gsit" icon={<PersonStanding />} />
+    <Card title="Интерактивный чат" description="Плейсхолдеры, которые превращают слова в элементы чата." href="/wiki/plugins/interactivechat" icon={<MessageCircle />} />
+    <Card title="Невидимые рамки" description="Как скрыть рамку для предметов, чтобы она не портила постройку." href="/wiki/plugins/invisibleframes" icon={<EyeOff />} />
+    <Card title="Быстрый бетон" description="Как быстро превратить сухой бетон в обычный с помощью котла." href="/wiki/plugins/quick-concrete" icon={<Blocks />} />
+    <Card title="Ресурспак" description="Возможности серверного ресурспака." href="/wiki/plugins/resource-pack" icon={<Package />} />
+  </Cards>
+</div>
+
+<div className="wiki-home-category">
+  <p className="wiki-home-category__title">Правила</p>
+  <Cards>
+    <Card title="Правила сервера" description="Что можно и нельзя делать на WestShield." href="/wiki/rules" icon={<ShieldCheck />} />
+    <Card title="Антигриф" description="Как защитить постройки и что делать при гриферстве." href="/wiki/rules/antigrief" icon={<Hammer />} />
+  </Cards>
+</div>
+
+<div className="wiki-home-category">
+  <p className="wiki-home-category__title">Экономика и поддержка</p>
+  <Cards>
+    <Card title="Магазины" description="Как торговать с другими игроками через сундуки и бочки." href="/wiki/economy/shop" icon={<Store />} />
+    <Card title="Подписки" description="Возможности подписок и поддержка проекта." href="/wiki/economy/donate" icon={<Heart />} />
+  </Cards>
+</div>

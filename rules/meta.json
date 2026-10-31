@@ -1,0 +1,6 @@
+{
+  "title": "Правила",
+  "icon": "ShieldCheck",
+  "defaultOpen": true,
+  "pages": ["index", "antigrief"]
+}

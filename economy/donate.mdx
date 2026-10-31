@@ -1,0 +1,72 @@
+---
+id: 'donate'
+title: 'Подписки'
+description: 'Подписка Rose на WestShield: цены, команды и возможности, как оформить. Личные удобства и косметика.'
+icon: Heart
+---
+
+import { Button } from '@usva-ui/react/primitives/button'
+import { Home, Palette, Server, Sparkles, Tag } from 'lucide-react'
+import Link from 'next/link'
+import { CopyPlaceholder } from '@/components/wiki/copy-placeholder'
+
+<h2 className="donate-rose-heading">Rose</h2>
+
+<Button asChild variant="solid" size="lg" className="donate-cta">
+  <Link href="https://donate.westshield.pw" target="_blank" rel="noopener noreferrer" aria-label="Оформить подписку, откроется в новой вкладке">
+    оформить подписку ↗
+  </Link>
+</Button>
+
+Rose — подписка WestShield с личными удобствами и косметикой.
+
+## Цены
+
+<div className="donate-price-grid not-prose">
+  <article className="donate-price-card">
+    <span className="donate-eyebrow">Срок подписки</span>
+    <h3>1 месяц</h3>
+    <strong>300 ₽</strong>
+  </article>
+  <article className="donate-price-card donate-price-card--featured">
+    <div className="donate-price-card__topline">
+      <span className="donate-eyebrow">Срок подписки</span>
+      <span className="donate-badge">выгоднее на 100 ₽</span>
+    </div>
+    <h3>3 месяца</h3>
+    <strong>800 ₽</strong>
+    <span className="donate-price-card__note">266 ₽ в месяц</span>
+  </article>
+</div>
+
+## Что даёт
+
+<div className="donate-feature-grid not-prose">
+  <article className="donate-feature-card"><Home aria-hidden="true" /><h3>2 точки дома</h3></article>
+  <article className="donate-feature-card"><Tag aria-hidden="true" /><h3>Префикс в чате и в табе</h3></article>
+  <article className="donate-feature-card"><Palette aria-hidden="true" /><h3>Цветные сообщения в чате</h3></article>
+  <article className="donate-feature-card"><Sparkles aria-hidden="true" /><h3>Своё приветствие</h3></article>
+  <article className="donate-feature-card"><Server aria-hidden="true" /><h3>Вход на заполненный сервер</h3></article>
+</div>
+
+#### Команды
+
+<div className="donate-command-table-scroll">
+  <table className="donate-command-table">
+    <thead>
+      <tr><th scope="col">Команда</th><th scope="col">Что делает</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><CopyPlaceholder value="/ignore" /></td><td>Игнорировать сообщения игрока</td></tr>
+      <tr><td><CopyPlaceholder value="/spin" /></td><td>Крутиться на месте</td></tr>
+      <tr><td><CopyPlaceholder value="/hat" /></td><td>Надеть предмет на голову</td></tr>
+      <tr><td><CopyPlaceholder value="/ptime" /></td><td>Установить личное время</td></tr>
+      <tr><td><CopyPlaceholder value="/pweather" /></td><td>Установить личную погоду</td></tr>
+      <tr><td><CopyPlaceholder value="/scale" /></td><td>Изменить рост</td></tr>
+    </tbody>
+  </table>
+</div>
+
+## Как оформить
+
+Оформить подписку можно на нашем сайте: <Button asChild variant="solid" size="lg" className="donate-cta donate-cta--inline"><Link href="https://donate.westshield.pw" target="_blank" rel="noopener noreferrer" aria-label="Оформить подписку, откроется в новой вкладке">оформить подписку ↗</Link></Button> После оплаты все возможности активируются автоматически.

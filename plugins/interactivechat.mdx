@@ -1,0 +1,93 @@
+---
+id: 'interactivechat'
+title: 'Интерактивный чат'
+description: 'На WestShield плейсхолдеры — специальные слова, которые превращаются в интерактивные элементы в чате.'
+icon: MessageCircle
+---
+
+import { Check, X } from 'lucide-react'
+
+## Зачем это нужно
+
+Плейсхолдеры превращают специальные слова в сообщении в интерактивные элементы чата. С их помощью можно показать предмет, инвентарь или содержимое эндер-сундука.
+
+{/* TODO: при появлении скриншота чата вставить изображение через <img> — оно будет обработано WikiImage, как на странице «Позы». */}
+{/* TODO: уточнить альтернативный способ взаимодействия с плейсхолдером. */}
+
+## Доступные плейсхолдеры
+
+<div className="interactivechat-table-scroll">
+  <table className="interactivechat-table">
+    <thead>
+      <tr>
+        <th scope="col">Плейсхолдер</th>
+        <th scope="col">Что отобразит</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><CopyPlaceholder value="[item]" /></td><td>Предмет в твоей руке</td></tr>
+      <tr><td><CopyPlaceholder value="[inv]" /></td><td>Твой инвентарь</td></tr>
+      <tr><td><CopyPlaceholder value="[ender]" /></td><td>Содержимое твоего эндер-сундука</td></tr>
+      <tr><td><CopyPlaceholder value="[msg]" /></td><td>Кнопка «написать в личку»</td></tr>
+      <tr><td><CopyPlaceholder value="[/команда]" /></td><td>Кликабельная команда: другие игроки могут нажать на неё и выполнить</td></tr>
+    </tbody>
+  </table>
+</div>
+
+Вместо <code>[/команда]</code> пиши реальную команду со слэшем, например <code>[/spawn]</code>. Другие игроки смогут нажать на неё и выполнить.
+
+## Как писать
+
+Пиши плейсхолдер в квадратных скобках прямо в тексте сообщения, как обычное слово, без пробелов внутри скобок.
+
+<div className="interactivechat-format-grid not-prose">
+  <section className="interactivechat-format-card interactivechat-format-card--correct">
+    <h3>Правильно</h3>
+    <div className="interactivechat-format-example">
+      <Check aria-hidden="true" />
+      <code>[item]</code>
+      <span>Плейсхолдер в квадратных скобках без пробелов внутри.</span>
+    </div>
+    <div className="interactivechat-format-example">
+      <Check aria-hidden="true" />
+      <code>[/spawn]</code>
+      <span>Команда со слэшем.</span>
+    </div>
+  </section>
+  <section className="interactivechat-format-card interactivechat-format-card--incorrect">
+    <h3>Неправильно</h3>
+    <div className="interactivechat-format-example">
+      <X aria-hidden="true" />
+      <code>[ item ]</code>
+      <span>Пробелы внутри скобок.</span>
+    </div>
+    <div className="interactivechat-format-example">
+      <X aria-hidden="true" />
+      <code>item</code>
+      <span>Нет квадратных скобок.</span>
+    </div>
+    <div className="interactivechat-format-example">
+      <X aria-hidden="true" />
+      <code>(item)</code>
+      <span>Круглые скобки вместо квадратных.</span>
+    </div>
+  </section>
+</div>
+
+<div className="interactivechat-message">
+  <span className="interactivechat-message__label">ГОТОВОЕ СООБЩЕНИЕ</span>
+  <div className="interactivechat-message__examples">
+    <CopyPlaceholder value="Смотри, что у меня: [item]" />
+    <CopyPlaceholder value="Заходи на спавн: [/spawn]" />
+  </div>
+</div>
+
+{/* TODO: уточнить, влияют ли регистр букв и русская раскладка на работу плейсхолдеров. */}
+
+{/* TODO: уточнить, работает ли [msg] в личных сообщениях, есть ли задержка между использованиями, поддерживаются ли плейсхолдеры в Bedrock и нужны ли для них отдельные права. */}
+
+<Callout title="Важно" type="warning" className="wiki-callout--accent">
+
+Спам плейсхолдерами наказывается по [правилам общения](/wiki/rules#rules-chat).
+
+</Callout>

@@ -1,0 +1,82 @@
+---
+id: 'shop'
+title: 'Магазины'
+description: 'Как торговать с другими игроками через сундуки и бочки'
+icon: Store
+---
+
+<div className="shop-page">
+
+Магазины помогают удобно торговать между игроками: продавец выставляет товар в сундуке или бочке, а покупатель оплачивает его выбранной валютой.
+
+## Обозначения валют на табличке
+
+Рядом с ценой на табличке указан значок валюты:
+
+<div className="shop-currency-card not-prose">
+  <table className="shop-currency-table">
+    <thead>
+      <tr><th scope="col">Значок</th><th scope="col">Валюта</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span className="shop-currency-symbol">Ⓐ</span></td><td>Алмаз</td></tr>
+      <tr><td><span className="shop-currency-symbol">Ⓡ</span></td><td>Алмазная руда</td></tr>
+      <tr><td><span className="shop-currency-symbol">Ⓝ</span></td><td>Незеритовый слиток</td></tr>
+    </tbody>
+  </table>
+</div>
+
+## Как создать магазин?
+
+<ol className="shop-steps">
+  <li><span>Поставь <strong>сундук или бочку</strong></span></li>
+  <li><span>Возьми в руку <strong>предмет, который хочешь продать</strong></span></li>
+  <li><span>Кликни по сундуку <strong>левой кнопкой мыши</strong></span></li>
+  <li><span>Укажи <strong>цену</strong> за единицу товара, написав число в чат</span></li>
+  <li><span>В открывшемся меню выбери <strong>валюту</strong> для продажи</span></li>
+  <li><span>Положи <strong>товар</strong> в сундук</span></li>
+</ol>
+
+После этого на сундуке появится табличка с ценой и информацией о товаре.
+Валюта за проданный товар автоматически появится в твоём инвентаре после покупки товаров игроками.
+
+<Callout title="Готово" type="info">
+
+Магазин создан, когда на сундуке появилась табличка с ценой и информацией о товаре
+
+</Callout>
+
+## Как пользоваться чужим магазином?
+
+<ol className="shop-steps shop-steps--compact">
+  <li><span>Найди магазин, который продаёт нужный предмет</span></li>
+  <li><span>Кликни по табличке <strong>левой кнопкой мыши</strong></span></li>
+  <li><span>Укажи <strong>количество товара</strong>, написав число в чат</span></li>
+</ol>
+
+<Callout title="Перед покупкой" type="warning">
+
+Убедись, что в твоём инвентаре есть нужное количество валюты. Она спишется автоматически при покупке, если товар есть в наличии
+
+</Callout>
+
+## Полезные команды
+
+Большинство действий удобнее выполнять кликом по табличке, но доступны и команды:
+
+<div className="shop-command-table-scroll">
+  <table className="shop-command-table">
+    <thead>
+      <tr><th scope="col">Команда</th><th scope="col">Что делает</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><CopyPlaceholder value="/shop history" /></td><td>Посмотреть историю покупок в магазине</td></tr>
+      <tr><td><CopyPlaceholder value="/shop remove" /></td><td>Удалить магазин</td></tr>
+      <tr><td><CopyPlaceholder value="/shop size" /></td><td>Изменить количество продаваемого товара</td></tr>
+      <tr><td><CopyPlaceholder value="/shop toggledisplay" /></td><td>Включить или выключить отображение товара над магазином</td></tr>
+      <tr><td><CopyPlaceholder value="/shop staff add ник" /></td><td>Добавить работника в магазин</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</div>

@@ -1,0 +1,6 @@
+{
+  "title": "Экономика и поддержка",
+  "icon": "Store",
+  "defaultOpen": true,
+  "pages": ["shop", "donate"]
+}

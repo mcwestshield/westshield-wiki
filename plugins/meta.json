@@ -1,0 +1,6 @@
+{
+  "title": "Плагины",
+  "icon": "Puzzle",
+  "defaultOpen": true,
+  "pages": ["brewery", "gsit", "interactivechat", "invisibleframes", "quick-concrete", "resource-pack"]
+}

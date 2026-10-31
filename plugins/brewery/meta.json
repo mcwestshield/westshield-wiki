@@ -1,0 +1,6 @@
+{
+  "title": "Пивоварение",
+  "icon": "Wine",
+  "defaultOpen": true,
+  "pages": ["how-to", "recipes"]
+}
